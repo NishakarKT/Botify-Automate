@@ -1,0 +1,45 @@
+.tanksNav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tanksNav__element {
+  flex: 1;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border: 1px solid lightgrey;
+}
+
+.tanksNav__element:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tanksNav__active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tanksNav__active:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 310px) {
+  .tanksNav__element {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 230px) {
+  .tanksNav__element {
+    font-size: 12px;
+  }
+}

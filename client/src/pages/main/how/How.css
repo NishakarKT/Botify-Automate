@@ -1,0 +1,42 @@
+.how {
+  color: #4f504f;
+  text-align: center;
+}
+
+.how > h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "pacifico", cursive;
+}
+
+.how > p {
+  font-weight: 500;
+  margin: 0 10px;
+  margin-bottom: 5px;
+}
+
+.how__downloadLink {
+  text-decoration: none;
+}
+.how__downloadLink > .MuiButton-root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  width: 200px;
+  background-color: teal !important;
+  text-transform: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.5s !important;
+  opacity: 0.9;
+}
+
+.how__downloadLink > .MuiButton-root:hover {
+  filter: brightness(90%);
+}
+
+.how > hr {
+  background-color: lightgray;
+  height: 0.5px;
+  border: none;
+}

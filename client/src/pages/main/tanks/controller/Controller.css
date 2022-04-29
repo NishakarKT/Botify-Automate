@@ -1,0 +1,67 @@
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controller__input {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.controller__input > label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: teal;
+  white-space: nowrap;
+}
+
+.controller__input > input {
+  width: 200px;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  color: teal;
+  border-radius: 5px;
+}
+
+.controller__switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.controller__buttonsBox {
+  display: flex;
+}
+
+.controller__buttonsBox > .MuiButton-root {
+  flex: 1;
+  color: white;
+  background-color: teal;
+  opacity: 0.9;
+  margin: 5px;
+}
+
+.controller__buttonsBox > .MuiButton-root:hover {
+  filter: brightness(90%);
+}
+
+.controller__switch > h1 {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.controller__switch > p {
+  color: #4f504f;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}

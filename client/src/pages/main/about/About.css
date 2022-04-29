@@ -1,0 +1,41 @@
+.about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.about__members {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: -5px;
+}
+
+.about > h1 {
+  font-size: 30px;
+  color: #4f504f;
+  font-weight: 500;
+  font-family: "pacifico", cursive;
+  text-align: center;
+}
+
+.about > h2 {
+  font-size: 25px;
+  color: #4f504f;
+  font-weight: 500;
+  font-family: "pacifico", cursive;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about > p {
+  font-size: 14px;
+  color: #4f504f;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 10px;
+}

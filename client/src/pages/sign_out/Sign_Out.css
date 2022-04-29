@@ -1,0 +1,70 @@
+.signup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.signup__box {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.signup__box > input {
+  width: 100%;
+  color: teal;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: all 0.8s;
+}
+
+.signup__box > input:hover,
+.signup__signupBtn:hover,
+.signup__signinBtn:hover {
+  opacity: 1;
+}
+
+.signup__signupBtn {
+  width: 75%;
+  color: white !important;
+  background-color: teal !important;
+  font-weight: 700 !important;
+  opacity: 0.6;
+  transition: all 0.8s !important;
+  text-transform: none !important;
+  margin-bottom: 10px !important;
+}
+
+.signup__errMsg {
+  color: red;
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.signup__signinBtn {
+  width: 100%;
+  font-size: 14px;
+  color: teal !important;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 10px;
+  opacity: 0.6;
+  transition: all 0.8s;
+}

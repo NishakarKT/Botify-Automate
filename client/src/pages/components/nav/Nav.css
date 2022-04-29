@@ -1,0 +1,268 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  width: 100vw;
+}
+
+.nav__leftLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.nav__leftElements {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav__logo {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  animation: robo 0.8s linear infinite;
+}
+
+.nav__logo:hover {
+  filter: brightness(90%);
+}
+
+.nav__leftLogo > p {
+  color: #4f504f;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  margin-left: 5px;
+  animation: electrify 2s linear infinite;
+}
+
+.nav__element {
+  text-decoration: none;
+  color: #4f504f;
+  font-weight: 700;
+  margin-left: 20px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__element:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.nav__active:hover {
+  color: teal;
+}
+
+.nav__active {
+  color: teal !important;
+  border-bottom: 2px solid teal;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__rightOptions {
+  display: flex;
+  align-items: center;
+}
+
+.nav__rightOptions .MuiButton-root {
+  background-color: teal !important;
+}
+
+.nav__userLink {
+  text-decoration: none;
+}
+
+.nav__userLink:hover {
+  filter: brightness(90%);
+}
+
+.nav__userLink > .MuiButton-root {
+  background-clip: content-box;
+}
+
+.nav__rightUser {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: teal;
+}
+
+.nav__btn {
+  text-decoration: none;
+  margin-right: 10px;
+  transition-duration: 0.5s;
+}
+
+.nav__btn:hover {
+  filter: brightness(90%);
+}
+
+.nav__btn > .MuiButton-root {
+  width: 90px;
+  font-weight: 600 !important;
+  color: white;
+  background-color: teal;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  text-transform: none;
+}
+
+.nav__avatarImg {
+  object-fit: cover;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  padding: 1.5px;
+  border: 2px solid white;
+  background-color: teal;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.nav__avatarImg:hover {
+  filter: brightness(90%);
+}
+
+.nav__username {
+  color: white;
+  font-weight: 600 !important;
+  white-space: nowrap;
+  text-transform: none;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 780px) {
+  .nav {
+    flex-direction: column;
+    padding: 0;
+  }
+  .nav__leftLogo {
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav__leftElements {
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  .nav__element {
+    color: white;
+    margin: 0 10px;
+  }
+
+  .nav__rightUser,
+  .nav__rightOptions {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nav__right {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .nav__rightUser {
+    justify-content: center;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .nav__rightOptions {
+    justify-content: center;
+  }
+  .nav__btn {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .nav__element {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 230px) {
+  .nav__element {
+    font-size: 11px;
+  }
+}
+
+@keyframes robo {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes electrify {
+  0% {
+    transform: translate(1px, -1px) rotate(0deg);
+    color: lightyellow;
+  }
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+    color: black;
+  }
+  20% {
+    transform: translate(1px, 1px) rotate(1deg);
+    color: black;
+  }
+  30% {
+    transform: translate(-1px, 1px) rotate(0deg);
+    color: black;
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+    color: lightyellow;
+  }
+  50% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+    color: black;
+  }
+  60% {
+    transform: translate(-1px, 1px) rotate(0deg);
+    color: black;
+  }
+  70% {
+    transform: translate(1px, -1px) rotate(-1deg);
+    color: black;
+  }
+  80% {
+    transform: translate(1px, 1px) rotate(1deg);
+    color: lightyellow;
+  }
+  90% {
+    transform: translate(1px, -1px) rotate(0deg);
+    color: black;
+  }
+  100% {
+    transform: translate(-1px, 1px) rotate(-1deg);
+    color: black;
+  }
+}

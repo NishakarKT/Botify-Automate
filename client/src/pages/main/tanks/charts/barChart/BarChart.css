@@ -1,0 +1,28 @@
+.barChart {
+  width: 800px;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .barChart {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .barChart {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .barChart {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .barChart {
+    width: 90vw;
+  }
+}

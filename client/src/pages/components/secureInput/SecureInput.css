@@ -1,0 +1,58 @@
+.secureInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: all 0.8s;
+}
+
+.secureInput:hover {
+  opacity: 1;
+}
+
+.secureInput > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  color: teal;
+}
+
+.secureInput__visibilityIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secureInput__visibilityIcon > .MuiSvgIcon-root {
+  color: #9d9d9d;
+  font-size: 30px;
+  padding: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.secureInput__visibilityIcon > .MuiSvgIcon-root:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 280px) {
+  .secureInput > input {
+    width: 100%;
+  }
+}

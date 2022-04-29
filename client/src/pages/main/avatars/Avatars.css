@@ -1,0 +1,50 @@
+.avatars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatars > h1,
+.avatars > h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #4f504f;
+}
+
+.avatars > h1 {
+  font-family: "pacifico", cursive;
+}
+
+.avatars > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.avatars__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.avatars__container > img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid teal;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.avatars__container > img:hover {
+  transform: scale(1.05);
+  filter: brightness(85%);
+}

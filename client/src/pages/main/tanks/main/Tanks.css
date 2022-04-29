@@ -1,0 +1,22 @@
+.tanks {
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tanks__control {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 670px) {
+  .tanks__control {
+    flex-direction: column;
+  }
+}
